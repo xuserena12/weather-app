@@ -9,13 +9,21 @@ const searchBar = document.querySelector('#search-bar');
 let clicks = 0;
 let currData;
 
+function clearInput(){
+  var getValue= document.getElementById("search-bar");
+    if (getValue.value !="") {
+        getValue.value = "";
+    }
+}
+
+
 searchButton.addEventListener("click", function(event) {
   event.preventDefault();
   let city = document.getElementById("search-bar").value;
   console.log(city);
   getData(city);
+  clearInput();
 })
-
 
 switchUnit.addEventListener("click",() => {
   if (clicks % 2 == 0) {
@@ -31,13 +39,6 @@ switchUnit.addEventListener("click",() => {
 
   }
 })
-
-function clearInput(){
-  var getValue= document.getElementById("search-bar");
-    if (getValue.value !="") {
-        getValue.value = "";
-    }
-}
 
 function getData(city) {
   fetch(
