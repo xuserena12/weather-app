@@ -1,6 +1,3 @@
-// function that hits the API
-// create an object for fetching api information
-
 let apiKey = "660f24be76db5d928d110e857fd0fd6b";
 let celcius = true;
 const searchButton = document.querySelector('.search-button');
@@ -101,7 +98,7 @@ function displayData(data) {
   }
   desc.innerHTML = data.description;
   windSpeed.innerHTML = `<i class="bi bi-wind"></i> Wind speed ${data.windspeed}`;
-  humidity.innerHTML = `<i class="bi bi-droplet"></i> Humidity ${data.humidity} %`;
+  humidity.innerHTML = `<i class="bi bi-droplet"></i> Humidity ${data.humidity}%`;
 }
 
 getData("Waterloo");
