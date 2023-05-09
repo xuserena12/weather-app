@@ -27,19 +27,14 @@ input {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-top: 150px;
 }
 
 .temperature {
   font-size: 55px;
 }
 
-.date {
-  display: flex;
-  justify-content: center;
-  padding-top: 100px;
-  font-weight: 700;
-  font-size: 18px;
-}
+
 
 .description {
   font-weight: 500;
