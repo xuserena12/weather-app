@@ -74,7 +74,7 @@ function processData(data) {
     farenheightfeelslike: kelvinToFarenheight(data.main.feels_like),
     humidity: data.main.humidity,
     windspeed: data.wind.speed,
-    description: `${data.weather[0].description}`, // make it so that it's uppercase for the first letter??
+    description: `${data.weather[0].description}`, 
   };
   return reducedData;
 }
